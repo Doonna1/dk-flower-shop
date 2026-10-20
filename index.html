@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK Flower Bouquets - Beautiful Flowers for Every Occasion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">DK FLOWER BOUQUETS</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">HOME</a></li>
+                    <li><a href="gifts.html" class="nav-link">GIFTS</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
+                    <li><a href="cart.html" class="nav-link">CART</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="cart-btn" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge">0</span>
+                </button>
+                <span class="cart-text">CART ($0)</span>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Send <span class="accent-text">flowers</span> like you mean it.
+                </h1>
+                <p class="hero-description">
+                    Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers
+                    will make it special cursus a sit amet mauris.
+                </p>
+                <p class="hero-signature">Dona</p>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="Beautiful pink tulips">
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="video-container">
+            <h2 class="video-title">Come with us to make a flower bouquet</h2>
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="images/homePageVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="products-container">
+            <div class="products-section-header">
+                <h2 class="products-section-title">Flower Delivery</h2>
+                <a href="#" class="view-all-link">View all</a>
+            </div>
+            <div class="products-slider-wrapper">
+                <button class="slider-arrow slider-arrow-left" aria-label="Scroll left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+                </button>
+                <div class="products-grid" id="products-grid">
+
+                </div>
+                <button class="slider-arrow slider-arrow-right" aria-label="Scroll right">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="products-message" id="products-message">
+                <p class="products-message-text">Showing <span id="shown-count">5</span> of <span
+                        id="total-count">29</span> products. <a href="#" class="view-more-link">Click "View all" above
+                        to see all products</a>.</p>
+            </div>
+            <div class="section-divider"></div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DK FLOWER BOUTIQUE</h3>
+                    <p>Creating beautiful memories with fresh flowers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@dkflowerboutique.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DK Flower Bouquets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+
+    <script src="main.js?v=4"></script>
+</body>
+
+</html

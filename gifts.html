@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts - DK Flower Boutique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">DK FLOWER BOUTIQUE</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="gifts.html" class="nav-link active">GIFTS</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
+                    <li><a href="cart.html" class="nav-link">CART</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="cart-btn" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge">0</span>
+                </button>
+                <span class="cart-text">CART ($0)</span>
+            </div>
+        </div>
+    </header>
+
+   
+  
+    <section class="gifts-hero-section">
+        <img src="images/giftsWallpaper.jpg" alt="Gifts Background" class="gifts-hero-bg">
+        <div class="gifts-hero-container">
+            <div class="gifts-hero-content">
+                <h1 class="hero-title">
+                    Gifts for Every <span class="accent-text">Occasion</span>
+                </h1>
+                <p class="hero-description">
+                    Find the perfect gift to express your feelings
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <div class="categories-container">
+            <h2 class="filter-title">Filter by Occasion</h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">
+                    <span class="btn-icon">🎁</span>
+                    <span class="btn-text">All</span>
+                </button>
+                <button class="category-btn" data-category="i-love-you">
+                    <span class="btn-icon">💕</span>
+                    <span class="btn-text">I Love You</span>
+                </button>
+                <button class="category-btn" data-category="happy-birthday">
+                    <span class="btn-icon">🎂</span>
+                    <span class="btn-text">Happy Birthday</span>
+                </button>
+                <button class="category-btn" data-category="congratulations">
+                    <span class="btn-icon">🎉</span>
+                    <span class="btn-text">Congratulations</span>
+                </button>
+                <button class="category-btn" data-category="im-sorry">
+                    <span class="btn-icon">💐</span>
+                    <span class="btn-text">I'm Sorry</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="products-section">
+        <div class="products-container">
+            <div class="products-grid" id="gifts-grid">
+              
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DK FLOWER BOUTIQUE</h3>
+                    <p>Creating beautiful memories with fresh flowers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gifts.html">Gifts</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@dkflowerboutique.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DK Flower Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="gifts.js"></script>
+</body>
+</html>
+

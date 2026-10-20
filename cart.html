@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - DK Flower Bouquets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cart-page-body">
+    <!-- Full Page Background Image -->
+    <div class="cart-page-wallpaper">
+        <img src="images/shoppingCart2.jpg" alt="Shopping Cart Background" class="wallpaper-image">
+    </div>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">DK FLOWER BOUQUETS</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="gifts.html" class="nav-link">GIFTS</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
+                    <li><a href="cart.html" class="nav-link active">CART</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="cart-btn" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge">0</span>
+                </button>
+                <span class="cart-text">CART ($0)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section for Cart -->
+    <section class="cart-hero-section">
+        <div class="cart-hero-container">
+            <div class="cart-hero-content">
+                <h1 class="hero-title">
+                    Shopping <span class="accent-text">Cart</span>
+                </h1>
+                <p class="hero-description">
+                    Review your items and proceed to checkout
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="cart-container">
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div class="cart-items-section">
+                    <div class="cart-header">
+                        <h2>Your Items</h2>
+                        <button id="clear-cart-btn" class="btn-clear-cart">Clear Cart</button>
+                    </div>
+                    <div id="cart-items" class="cart-items-list">
+                        <!-- Cart items will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary-section">
+                    <div class="cart-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span id="cart-shipping">$1.99</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="cart-total">$0.00</span>
+                        </div>
+                        
+                        
+                        <div class="customer-info-section">
+                            <h3>Customer Information</h3>
+                            <div class="form-group">
+                                <label for="customer-name">Full Name</label>
+                                <input type="text" id="customer-name" name="customer-name" placeholder="Enter your full name" autocomplete="off" spellcheck="false">
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-address">Delivery Address</label>
+                                <textarea id="customer-address" name="customer-address" rows="4" placeholder="Enter your delivery address" autocomplete="off" spellcheck="false"></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="button" id="checkout-btn" class="btn-checkout" onclick="handleCheckout()">Proceed to Checkout</button>
+                        <a href="index.html" class="btn-continue-shopping">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DK FLOWER BOUTIQUE</h3>
+                    <p>Creating beautiful memories with fresh flowers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gifts.html">Gifts</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@dkflowerboutique.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DK Flower Bouquets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
+
